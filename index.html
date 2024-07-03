@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>MaşşallahSU?</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="public/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="public/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div id="container">
+        <img
+            class="gif"
+            alt="gif"
+            src="https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif"
+        />
+    <h1>Merhaba HivaSU, Dün gece sizi istemeden veya farkında olmadan sinirlendirmiş biri var galiba?</h1>
+    <h2>Aşağıdaki anketimize katılıp aradaki buzların erimesi için adımların atılmasına ne dersiniz?</h2>
+    <div class="button-container">
+        <button class="yes" onclick="yes_sure()">Neden olmasin,Hadi başlayaşlım? (Behna fireh)</button>
+        <button class="nope" id="nope" onclick="no_thanks()"> KOSKOCAMAN BİR HAYIR</button>
+    </div>
+    <!-- Inside index.html, add a form below the buttons -->
+        <div id="contactForm" style="display:none;", class="contactForm" >
+            <div >
+                <h2>Aşağıdaki seçimleriniz itina dikkate alınarak böyle bi durumun yaşanmaması sağlanacaktır.</h2><br>
+                <input type="checkbox" id="UygunlukCheck" value="UygunlukCheckValue">
+                <label for="availibilty">Aile ortamında ben ona yazana kadar bana yazmaz ise daha mutlu olurum</label><br>
+                <input type="checkbox" id="HataCheck" value="HataCheckValue">
+                <label for="instagramHandle">Dün gece bana yazdığında halen oturduğumu bildiği halde yazdı</label><br>
+                <input type="checkbox" id="MerakCheck" value="MerakCheckValue">
+                <label for="instagramHandle">Dün gece bana yazdığında,misafirlikten kalkmış olduğumu düşünüp, ne yapıp yapmadığımı sormak için bana yazdı</label><br>
+                <input type="checkbox" id="DondurmaCheck" value="DondurmaCheckValue">
+                <label for="instagramHandle">Sahilde en sevdiğim dondurmayı alıp beraber yürüyebiliriz</label><br>
+                <input type="checkbox" id="KahveCheck" value="KahveCheckValue">
+                <label for="instagramHandle">Bu gece karşılıklı sigara ve kahve içme teklifi gelirse kabul edebilirim</label><br>
+                <input type="checkbox" id="DogrulukCheck" value="DogrulukCheckValue">
+                <label for="instagramHandle">Bu form kendi hür iradem ile doldurduğumu onaylıyorum</label><br>
+                <input type="checkbox" id="DevamCheck" value="DevamCheckValue">
+                <label for="instagramHandle">Bu ve buna benzer formların/anketlerin göderilmesi beni rahatsız etmemektedir</label><br>
+            </div>
+            <button class="send_form" onclick="send_apl()">Anketi kaydet</button><br>
+        </div>
+    </div>
+        <script src="public/script.js"></script>
+</body>
+</html>
+
